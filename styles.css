@@ -76,8 +76,8 @@ img {
 }
 
 .card {
-  width: 30%;
-  height: 85px;
+  width: 700px;
+  height: auto;
   background: transparent;
   border-radius: 20px;
   display: flex;
@@ -91,19 +91,6 @@ img {
 .card:hover {
   cursor: pointer;
   transform: scale(1.05);
-}
-
-.img {
-  width: 70px;
-  height: 70px;
-  margin-left: 10px;
-  border-radius: 10px;
-  background: url(batman1.jpg);
-}
-
-.card:hover>.img {
-  transition: 0.5s ease-in-out;
-  background: url(mobile1.jpg);
 }
 
 .textBox {
@@ -191,4 +178,43 @@ img {
     flex-direction: column;
     align-items: flex-start;
   }
+}
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+}
+.img {
+  width: 70px;
+  height: 70px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.card:hover>.img {
+  transition: 0.5s ease-in-out;
+}
+#one{
+  background: url(favicon.jpg);
+  background-size: cover;
+}
+.card:hover>#one{
+  background: url(batman3.jpg);
+}
+#two{
+  background: url(BRIGADE\ \(1\).png);
+  background-size: cover;
+}
+.card:hover>#two{
+  background: url(batman3.jpg);
+}
+#three{
+  background: url(2cdbfc_0aef352685334e3ea8b62b3fbb89a2b6~mv2.png);
+  background-size: cover;
+}
+.card:hover>#three{
+  background: url(batman3.jpg);
 }
