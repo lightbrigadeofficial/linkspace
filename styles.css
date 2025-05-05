@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cedarville+Cursive&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sedan+SC&family=Tektur:wght@400..900&family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+body {
+  background-size: cover;
+  /*  Covers the entire area */
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  text-shadow: 10px 10px 25px black;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  background-color: transparent;
+  padding-top: 0%;
+  margin-top: 3%;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    padding-top: 0%;
+    margin-top: 0%;
+  }
+}
+
+body {
+  background-image: url('mobile1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url('mobile1.jpg');
+  }
+
+  img {
+    height: 85px;
+    width: auto;
+  }
+}
+
+img {
+  border-radius: 50%;
+  height: 90px;
+  width: auto;
+  box-shadow: 5px 5px 10px black;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  /* centers horizontally */
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.icon {
+  font-size: 30px;
+  color: black;
+
+  text-decoration: none;
+  border: solid 2px black;
+  display: flex;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: white;
+  box-shadow: 4px 4px black;
+}
+
+.icon:active {
+  box-shadow: 0px 0px black;
+  transform: translate(3px, 3px);
+}
+
+.card {
+  width: 30%;
+  height: 85px;
+  background: transparent;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  backdrop-filter: blur(15px);
+  transition: 0.5s ease-in-out;
+  color: white;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.img {
+  width: 70px;
+  height: 70px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background: url(batman1.jpg);
+}
+
+.card:hover>.img {
+  transition: 0.5s ease-in-out;
+  background: url(mobile1.jpg);
+}
+
+.textBox {
+  width: calc(100% - 90px);
+  margin-left: 10px;
+  color: white;
+}
+
+.textContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.span {
+  font-size: 10px;
+  padding-right: 1px;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.h1 {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  width: 90%;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+
+.p {
+  font-size: 13px;
+  font-weight: 400;
+  width: 90%;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  /* stack cards vertically */
+  align-items: center;
+  /* center them horizontally */
+  gap: 10px;
+  /* spacing between cards */
+  padding: 20px;
+  font-family: 'Bebas Neue' sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .card {
+    width: 95%;                /* make it slightly narrower */
+    height: fit-content;
+    flex-direction: row;
+    padding: 8px;              /* less padding */
+    border-radius: 15px;       /* smaller corners */
+  }
+
+  .img {
+    width: 70px;               /* reduce image size */
+    height: 50px;
+    border-radius: 8px;
+    margin-left: 5px;
+  }
+
+  .h1 {
+    font-size: 12px;           /* smaller title */
+    width: 100%;
+  }
+
+  .p {
+    font-size: 10px;           /* smaller body text */
+    width: 100%;
+  }
+
+  .span {
+    font-size: 8px;
+    display: none;             /* optional: keep hidden */
+  }
+
+  .textBox {
+    margin-left: 8px;
+    width: 100%;
+  }
+
+  .textContent {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
