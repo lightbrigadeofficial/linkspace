@@ -15,16 +15,22 @@ window.addEventListener("DOMContentLoaded", function () {
         });
     }
   });
+
+  //Click for intro s//
   window.addEventListener('load', () => {
     const popup = document.getElementById('popup');
+    const audio = document.getElementById('batman-audio');
+
     document.addEventListener('click', () => {
       popup.style.display = 'none';
-      // You can trigger your intro function here
       playIntro();
     });
   });
 
   function playIntro() {
+    const audio = document.getElementById('batman-audio');
+    audio.play().catch((err) => {
+      console.error("Audio playback failed:", err);
+    });
     console.log("Intro is playing...");
-    // Replace with your actual intro logic
   }
